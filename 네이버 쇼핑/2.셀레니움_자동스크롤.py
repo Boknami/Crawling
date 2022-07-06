@@ -45,8 +45,6 @@ while True:
 # 상품 정보 div
 items = browser.find_elements(By.CSS_SELECTOR, '.basicList_info_area__17Xyo')
 
-print(items)
-
 for item in items:
     name = item.find_element(By.CSS_SELECTOR, ".basicList_title__3P9Q7").text
     try:
